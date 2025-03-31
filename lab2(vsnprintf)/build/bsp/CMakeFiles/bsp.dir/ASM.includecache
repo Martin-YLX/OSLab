@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ylx/Documents/OSLab/lab2(vsnprintf)/src/bsp/prt_reset_vector.S
+
+/Users/ylx/Documents/OSLab/lab2(vsnprintf)/src/bsp/start.S
+

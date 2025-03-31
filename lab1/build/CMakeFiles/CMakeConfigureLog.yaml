@@ -1,0 +1,260 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:27 (project)"
+    message: |
+      The target system is: Generic -  - aarch64
+      The host system is: Darwin - 24.3.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:27 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc 
+      Build flags: -Os;-Wformat-signedness;-Wl,--build-id=none;-fno-PIE;-fno-PIE;--specs=nosys.specs;-fno-builtin;-fno-dwarf2-cfi-asm;-fomit-frame-pointer;-fzero-initialized-in-bss;-fdollars-in-identifiers;-ffunction-sections;-fdata-sections;-fno-aggressive-loop-optimizations;-fno-optimize-strlen;-fno-schedule-insns;-fno-inline-small-functions;-fno-inline-functions-called-once;-fno-strict-aliasing;-finline-limit=20;-mlittle-endian;-nostartfiles;-funwind-tables
+      Id flags:  
+      
+      The output was:
+      0
+      /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400000
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /Users/ylx/Documents/OSLab/lab1/build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:27 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      aarch64-none-elf-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:27 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/ylx/Documents/OSLab/lab1/build/CMakeFiles/CMakeScratch/TryCompile-jn8htV"
+      binary: "/Users/ylx/Documents/OSLab/lab1/build/CMakeFiles/CMakeScratch/TryCompile-jn8htV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os   -Wformat-signedness    -Wl,--build-id=none   -fno-PIE -fno-PIE --specs=nosys.specs -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20  -mlittle-endian -nostartfiles -funwind-tables "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "  -T /Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ylx/Documents/OSLab/lab1/build/CMakeFiles/CMakeScratch/TryCompile-jn8htV'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_de4e5/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_de4e5.dir/build.make CMakeFiles/cmTC_de4e5.dir/build
+        Building C object CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj
+        /Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc   -Os   -Wformat-signedness    -Wl,--build-id=none   -fno-PIE -fno-PIE --specs=nosys.specs -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20  -mlittle-endian -nostartfiles -funwind-tables     -v -o CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        Reading specs from /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/nosys.specs
+        rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+        COLLECT_GCC=/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc
+        Target: aarch64-none-elf
+        Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=aarch64-none-elf --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install/aarch64-none-elf --with-bugurl=https://bugs.linaro.org/ --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+        COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/'
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/cc1 -quiet -v -iprefix /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/ -isysroot /Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_de4e5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -Os -Wformat-signedness -version -fno-PIE -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20 -funwind-tables -o /var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccdPtFpP.s
+        GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (aarch64-none-elf)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/include"
+        ignoring nonexistent directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/usr/local/include"
+        ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/include-fixed"
+        ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include"
+        ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include-fixed
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include
+        End of search list.
+        Compiler executable checksum: 48fc056e53bd38a73dd5e34d9ddddd86
+        COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/'
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj /var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccdPtFpP.s
+        GNU assembler version 2.43.1 (aarch64-none-elf) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+        COMPILER_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/
+        LIBRARY_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib/
+        COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_de4e5
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de4e5.dir/link.txt --verbose=1
+        Using built-in specs.
+        Reading specs from /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/nosys.specs
+        rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+        COLLECT_GCC=/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc
+        COLLECT_LTO_WRAPPER=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/lto-wrapper
+        Target: aarch64-none-elf
+        Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=aarch64-none-elf --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install/aarch64-none-elf --with-bugurl=https://bugs.linaro.org/ --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+        COMPILER_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/
+        LIBRARY_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib/
+        COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-T' '/Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld' '-v' '-o' 'cmTC_de4e5' '-mabi=lp64' '-dumpdir' 'cmTC_de4e5.'
+         /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/collect2 -plugin /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/liblto_plugin.so -plugin-opt=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccmYVkXa.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf -EL -X -maarch64elf -o cmTC_de4e5 -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1 -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib --build-id=none CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc --start-group -lgcc -lc -lnosys --end-group -T /Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld
+        /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/ld: warning: cmTC_de4e5 has a LOAD segment with RWX permissions
+        COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-T' '/Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld' '-v' '-o' 'cmTC_de4e5' '-mabi=lp64' '-dumpdir' 'cmTC_de4e5.'
+        /Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc -Os   -Wformat-signedness    -Wl,--build-id=none   -fno-PIE -fno-PIE --specs=nosys.specs -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20  -mlittle-endian -nostartfiles -funwind-tables     -T /Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld -v CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -o cmTC_de4e5
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:27 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include]
+          add: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include-fixed]
+          add: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include]
+        end of search list found
+        collapse include dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1/include]
+        collapse include dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include-fixed] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1/include-fixed]
+        collapse include dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/aarch64-none-elf/include]
+        implicit include dirs: [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1/include;/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1/include-fixed;/Users/ylx/arm-gnu-aarch64-none-elf/aarch64-none-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:27 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/ylx/Documents/OSLab/lab1/build/CMakeFiles/CMakeScratch/TryCompile-jn8htV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_de4e5/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_de4e5.dir/build.make CMakeFiles/cmTC_de4e5.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc   -Os   -Wformat-signedness    -Wl --build-id=none   -fno-PIE -fno-PIE --specs=nosys.specs -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20  -mlittle-endian -nostartfiles -funwind-tables     -v -o CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/nosys.specs]
+        ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+        ignore line: [COLLECT_GCC=/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc]
+        ignore line: [Target: aarch64-none-elf]
+        ignore line: [Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=aarch64-none-elf --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install/aarch64-none-elf --with-bugurl=https://bugs.linaro.org/ --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/']
+        ignore line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/cc1 -quiet -v -iprefix /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/ -isysroot /Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_de4e5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -Os -Wformat-signedness -version -fno-PIE -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20 -funwind-tables -o /var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccdPtFpP.s]
+        ignore line: [GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (aarch64-none-elf)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include"]
+        ignore line: [ignoring duplicate directory "/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include]
+        ignore line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/include-fixed]
+        ignore line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 48fc056e53bd38a73dd5e34d9ddddd86]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/']
+        ignore line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj /var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccdPtFpP.s]
+        ignore line: [GNU assembler version 2.43.1 (aarch64-none-elf) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
+        ignore line: [COMPILER_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/]
+        ignore line: [LIBRARY_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-v' '-o' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj' '-c' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_de4e5]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de4e5.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/nosys.specs]
+        ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+        ignore line: [COLLECT_GCC=/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/lto-wrapper]
+        ignore line: [Target: aarch64-none-elf]
+        ignore line: [Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=aarch64-none-elf --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-14/build-aarch64-none-elf/install/aarch64-none-elf --with-bugurl=https://bugs.linaro.org/ --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+        ignore line: [COMPILER_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/]
+        ignore line: [LIBRARY_PATH=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib/:/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-T' '/Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld' '-v' '-o' 'cmTC_de4e5' '-mabi=lp64' '-dumpdir' 'cmTC_de4e5.']
+        link line: [ /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/collect2 -plugin /Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/liblto_plugin.so -plugin-opt=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccmYVkXa.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf -EL -X -maarch64elf -o cmTC_de4e5 -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1 -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib -L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib --build-id=none CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc --start-group -lgcc -lc -lnosys --end-group -T /Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld]
+          arg [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../libexec/gcc/aarch64-none-elf/14.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/hr/67k42ghn7h59dw4xymt_b_880000gn/T//ccmYVkXa.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [--sysroot=/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-X] ==> ignore
+          arg [-maarch64elf] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_de4e5] ==> ignore
+          arg [-L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1] ==> dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1]
+          arg [-L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc] ==> dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc]
+          arg [-L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib] ==> dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib]
+          arg [-L/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib] ==> dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib]
+          arg [--build-id=none] ==> ignore
+          arg [CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [--end-group] ==> ignore
+          arg [-T] ==> ignore
+          arg [/Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld] ==> ignore
+        ignore line: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/bin/ld: warning: cmTC_de4e5 has a LOAD segment with RWX permissions]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-Wformat-signedness' '-fno-PIE' '-specs=nosys.specs' '-fno-builtin' '-fno-dwarf2-cfi-asm' '-fomit-frame-pointer' '-fzero-initialized-in-bss' '-fdollars-in-identifiers' '-ffunction-sections' '-fdata-sections' '-fno-aggressive-loop-optimizations' '-fno-optimize-strlen' '-fno-schedule-insns' '-fno-inline-small-functions' '-fno-inline-functions-called-once' '-fno-strict-aliasing' '-finline-limit=20' '-mlittle-endian' '-nostartfiles' '-funwind-tables' '-T' '/Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld' '-v' '-o' 'cmTC_de4e5' '-mabi=lp64' '-dumpdir' 'cmTC_de4e5.']
+        ignore line: [/Users/ylx/arm-gnu-aarch64-none-elf/bin/aarch64-none-elf-gcc -Os   -Wformat-signedness    -Wl --build-id=none   -fno-PIE -fno-PIE --specs=nosys.specs -fno-builtin -fno-dwarf2-cfi-asm -fomit-frame-pointer -fzero-initialized-in-bss -fdollars-in-identifiers -ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations -fno-optimize-strlen -fno-schedule-insns -fno-inline-small-functions -fno-inline-functions-called-once -fno-strict-aliasing -finline-limit=20  -mlittle-endian -nostartfiles -funwind-tables     -T /Users/ylx/Documents/OSLab/lab1/src/aarch64-qemu.ld -v CMakeFiles/cmTC_de4e5.dir/CMakeCCompilerABI.c.obj -o cmTC_de4e5]
+        ignore line: []
+        ignore line: []
+        collapse library dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1]
+        collapse library dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc]
+        collapse library dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../lib/gcc/aarch64-none-elf/14.2.1/../../../../aarch64-none-elf/lib] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/aarch64-none-elf/lib]
+        collapse library dir [/Users/ylx/arm-gnu-aarch64-none-elf/bin/../aarch64-none-elf/lib] ==> [/Users/ylx/arm-gnu-aarch64-none-elf/aarch64-none-elf/lib]
+        implicit libs: [gcc;c;gcc;gcc;c;nosys]
+        implicit objs: []
+        implicit dirs: [/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc/aarch64-none-elf/14.2.1;/Users/ylx/arm-gnu-aarch64-none-elf/lib/gcc;/Users/ylx/arm-gnu-aarch64-none-elf/aarch64-none-elf/lib]
+        implicit fwks: []
+      
+      
+...
