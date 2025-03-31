@@ -1,6 +1,0 @@
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/CMakeFiles/miniEuler.dir
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/CMakeFiles/edit_cache.dir
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/CMakeFiles/rebuild_cache.dir
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/bsp/CMakeFiles/bsp.dir
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/bsp/CMakeFiles/edit_cache.dir
-/Users/ylx/Documents/OSLab/lab2(withoutFIFO)/build/bsp/CMakeFiles/rebuild_cache.dir
