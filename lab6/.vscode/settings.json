@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "cmake.sourceDirectory": "/Users/ylx/Documents/OSLab/lab6/src",
+    "files.associations": {
+        "prt_task_external.h": "c"
+    }
+}
